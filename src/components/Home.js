@@ -2,7 +2,6 @@ import React from 'react';
 import User from './User'
 
 const Home = ({users}) => {
-
   const userList = users.map((user, i) => {
     return (
       <div key={i}>
