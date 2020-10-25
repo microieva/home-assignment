@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import User from './User'
-import Button from './Button'
 
 const Home = ({users}) => {
 
@@ -18,18 +16,17 @@ const Home = ({users}) => {
     )
   })    
     
-    return (
-        <div className='App'>
-          <h1>Integrify Home Assignment</h1>
+  return (
+      <div className='App'>
+          <h1>Integrify Home Assignment | Ieva Vyliaudaite</h1>
           <h2>Total number of users: {users.length}</h2>
           <div className='app-container'>
-            <div className='list-wrapper'>
-              {users.length > 0 ? userList : <h1>Loading ....</h1>}
-            </div>
+              <div className='list-wrapper'>
+                {users.length > 0 ? userList : <h1>Loading ....</h1>}
+              </div>
           </div>
-        </div>
-    )
-  
+      </div>
+  )  
 }
 
 export default Home;

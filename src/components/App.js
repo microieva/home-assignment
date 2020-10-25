@@ -1,13 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { 
+    useState, 
+    useEffect 
+} from 'react';
 import Home from './Home';
 import UserDetails from './UserDetails';
 import '../styles/App.css'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { 
+    BrowserRouter as Router, 
+    Switch, 
+    Route 
+} from 'react-router-dom';
 
 
 const App = () => {
     const [users, setUsers] = useState([])
-
 
     useEffect(() => {
         const url = 'https://jsonplaceholder.typicode.com/users'
@@ -17,13 +23,10 @@ const App = () => {
             setUsers(data)
       })
     }, [])
-    console.log(useState)
 
-    return (
-        
+    return (   
         <Router>
             <div className='App'>
-            
             </div>
             <Switch>
                 <Route exact path='/users/:id' 

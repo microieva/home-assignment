@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router'
 import Button from './Button'
 
-
-
 const UserDetails = ({users}) => {
     const {id} = useParams()
-    console.log('users from details', users)
     let user = users.find(u => u.id === Number(id))
     
     return (
@@ -27,7 +24,7 @@ const UserDetails = ({users}) => {
                 </div>
             </div>
             <Link to='/'>
-                <Button name = "Back"/>
+                <Button name = "BACK"/>
             </Link>
             
         </div>
