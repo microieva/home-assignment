@@ -8,18 +8,12 @@ const Home = ({users}) => {
   const userList = users.map((user, i) => {
     return (
       <div key={i}>
-        {/* <Link to={`/users/${i+1}`}>  */}
           <User 
-            key={i}
+            id={i}
             name={user.name}
             username={user.username}
-            website={user.website}
-            button={()=> <Link to={`/users/${i+1}`}>
-                          <Button name="MORE DETAILS"/>
-                        </Link>
-                  }
+            website={user.website}  
           />
-        {/* </Link> */}
       </div>
     )
   })    
